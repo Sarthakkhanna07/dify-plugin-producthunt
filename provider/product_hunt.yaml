@@ -1,0 +1,17 @@
+identity:
+  author: "sarthak_khanna"
+  name: "product_hunt"
+  label:
+    en_US: "product_hunt"
+    zh_Hans: "product_hunt"
+    pt_BR: "product_hunt"
+  description:
+    en_US: "Get trending Product Hunt data"
+    zh_Hans: "Get trending Product Hunt data"
+    pt_BR: "Get trending Product Hunt data"
+  icon: "icon.svg"
+tools:
+  - tools/product_hunt.yaml
+extra:
+  python:
+    source: provider/product_hunt.py

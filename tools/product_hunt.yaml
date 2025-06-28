@@ -1,0 +1,30 @@
+identity:
+  name: "product_hunt"
+  author: "sarthak_khanna"
+  label:
+    en_US: "product_hunt"
+    zh_Hans: "product_hunt"
+    pt_BR: "product_hunt"
+description:
+  human:
+    en_US: "Get trending Product Hunt data"
+    zh_Hans: "Get trending Product Hunt data"
+    pt_BR: "Get trending Product Hunt data"
+  llm: "Get trending Product Hunt data"
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: "Get trending Product Hunt data"
+      zh_Hans: "Get trending Product Hunt data"
+      pt_BR: "Get trending Product Hunt data"
+    llm_description: "Get trending Product Hunt data"
+    form: llm
+extra:
+  python:
+    source: tools/product_hunt.py

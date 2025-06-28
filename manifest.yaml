@@ -1,0 +1,38 @@
+version: 0.0.1
+type: plugin
+author: sarthak_khanna
+name: product_hunt
+label:
+  en_US: product_hunt
+  ja_JP: product_hunt
+  zh_Hans: product_hunt
+  pt_BR: product_hunt
+description:
+  en_US: Get trending Product Hunt data
+  ja_JP: Get trending Product Hunt data
+  zh_Hans: Get trending Product Hunt data
+  pt_BR: Get trending Product Hunt data
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    endpoint:
+      enabled: true
+plugins:
+  tools:
+    - provider/product_hunt.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: 0.6.4
+created_at: 2025-06-27T18:11:57.4052667+05:30
+privacy: PRIVACY.md
+verified: false
