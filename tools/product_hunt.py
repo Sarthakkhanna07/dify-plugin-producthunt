@@ -5,7 +5,7 @@ from dify_plugin.entities.tool import ToolInvokeMessage
 
 
 class ProductHuntTool(Tool):
-    def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage]:
+    def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage, None, None]:
         try:
             url = "https://api.rss2json.com/v1/api.json?rss_url=https://www.producthunt.com/feed"
             response = httpx.get(url, timeout=10)
